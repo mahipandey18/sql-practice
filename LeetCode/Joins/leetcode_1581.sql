@@ -2,7 +2,7 @@
 -- Approach: left join visits with transactions and count visits with no matching transaction
 -- Learning: after left join, null checks must be applied on the right table
 
---solution
+--Solution
 SELECT customer_id COUNT(visit_id) AS count_no_trans
 FROM Visits v
 LEFT JOIN Transactions t ON v.visit_id = t.visit_id
