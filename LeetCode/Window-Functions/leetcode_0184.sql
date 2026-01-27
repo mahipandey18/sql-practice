@@ -1,3 +1,7 @@
+-- LeetCode 184: Department Highest Salary
+-- Approach: rank employee salaries within each department using DENSE_RANK()
+-- Learning: window functions make top-per-group queries simple and readable
+
 --Solution
 SELECT d.name AS Department, e.name AS Employee, e.salary AS Salary
 FROM (
