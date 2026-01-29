@@ -1,3 +1,7 @@
+-- LeetCode 626: Exchange Seats
+-- Approach: Use CASE to swap adjacent odd–even seat IDs while keeping the last odd seat unchanged
+-- Logic: Odd id → id+1 if next seat exists, Even id → id-1, Else keep same id, then order by id
+
 --Solution
 SELECT
     CASE
