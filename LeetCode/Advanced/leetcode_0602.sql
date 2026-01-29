@@ -1,3 +1,7 @@
+-- LeetCode 602: Friend Requests II – Who Has the Most Friends
+-- Approach: Convert friendships into a single column using UNION ALL to include both requester and accepter, then count occurrences per user
+-- Learning: UNION ALL keeps duplicates and is ideal for counting frequency in bidirectional relationships
+
 --Solution
 SELECT id, COUNT(*) AS num
 FROM(
