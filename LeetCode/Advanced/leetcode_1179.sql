@@ -1,3 +1,7 @@
+-- LeetCode 1179: Reformat Department Table
+-- Approach: Use conditional aggregation with SUM and IF to pivot monthly revenue values into separate columns per department
+-- Learning: SUM(IF(condition, value, NULL)) is a common SQL pattern to transform rows into columns using GROUP BY
+
 --Solution
 SELECT id,
     SUM(IF(month = 'Jan',revenue, null)) AS Jan_Revenue,
