@@ -1,3 +1,7 @@
+-- LeetCode 1164: Product Price at a Given Date
+-- Approach: For each product, find the latest price change on or before the given date and use 10 if no change exists
+-- Learning: Correlated subqueries are useful for retrieving the most recent record based on a condition
+
 --Solution
 SELECT distinct p1.product_id, IFNULL(
     (SELECT p2.new_price
