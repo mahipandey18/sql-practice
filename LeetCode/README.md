@@ -11,7 +11,7 @@ Each solution focuses on:
 
 ## Concepts Practiced
 - Aggregations and GROUP BY
-- INNER and LEFT JOINs
+- Joins
 - Subqueries
 - Window functions (RANK, DENSE_RANK, ROW_NUMBER)
 - Conditional logic using CASE
